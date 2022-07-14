@@ -12,11 +12,22 @@
 html {
   box-sizing: border-box;
   font-size: 62.5%;
-  background-color: var(--color-neutral-200);
+  background: url(images/pattern-background-desktop.svg) no-repeat,
+    var(--color-primary-200);
+  background-size: contain;
+  background-position: 0% -20%;
   font-family: var(--font-family);
   color: var(--color-neutral-300);
   line-height: 1.6;
   font-weight: 500;
+}
+
+@media (max-width: 600px) {
+  html {
+    background: url(images/pattern-background-mobile.svg) no-repeat,
+      var(--color-primary-200);
+    background-size: contain;
+  }
 }
 
 body {
@@ -40,7 +51,7 @@ main {
 }
 
 .order-summary {
-  background-color: var(--color-neutral-100);
+  background: var(--color-neutral-100);
   width: 90%;
   max-width: 350px;
   border-radius: 1rem;

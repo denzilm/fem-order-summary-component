@@ -52,7 +52,7 @@ main {
 }
 
 .order-summary-content {
-  padding: 2rem;
+  padding: 1.5rem;
   display: flex;
   flex-direction: column;
   gap: 2rem;
@@ -106,4 +106,24 @@ main {
 .btn--ghost {
   background-color: transparent;
   color: var(--color-neutral-200);
+}
+
+.link:active,
+.link:visited {
+  color: var(--color-primary-100);
+}
+
+.link:hover {
+  text-decoration: none;
+  color: hsla(245, 75%, 52%, 0.8);
+}
+
+.btn--primary:hover {
+  background-color: hsla(245, 75%, 52%, 0.8);
+  cursor: pointer;
+}
+
+.btn--ghost:hover {
+  color: var(--color-neutral-300);
+  cursor: pointer;
 }
